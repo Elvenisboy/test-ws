@@ -12,7 +12,8 @@ function createNode (callback) {
     const peerIdStr = peerInfo.id.toB58String()
     // const ma = `/dns4/star-signal.cloud.ipfs.team/tcp/443/wss/p2p-webrtc-star/ipfs/${peerIdStr}`
     
-    const ma = `/ip6/127.0.0.1/tcp/443/wss/p2p-webrtc-star/ipfs/${peerIdStr}`
+    // const ma = `/ip4/127.0.0.1/tcp/3737/wss/p2p-webrtc-star/ipfs/${peerIdStr}`
+    const ma = `/ip4/112.74.173.37/tcp/9090/ws/p2p-webrtc-star/ipfs/${peerIdStr}`
 
     peerInfo.multiaddrs.add(ma)
 
